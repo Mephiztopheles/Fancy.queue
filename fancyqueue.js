@@ -33,6 +33,7 @@
     Fancy.queue = function (callback) {
         if (callback) {
             GQ.add(callback);
+            return this;
         } else {
             if (!logged) {
                 logged = true;
